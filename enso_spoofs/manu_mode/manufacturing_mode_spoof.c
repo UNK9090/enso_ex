@@ -14,6 +14,6 @@
 void _start(PayloadArgsStruct *boot_args) {
 	if (boot_args->trun != 1)
         // set Manufacturing Mode
-	(*sysroot_ctx_ptr)->boot_args->boot_type_indicator_1 = 0x4;
+	(*sysroot_ctx_ptr)->boot_args->boot_type_indicator_1 |= 0x4;
 	return ;
 }
