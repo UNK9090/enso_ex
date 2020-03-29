@@ -381,10 +381,8 @@ int do_install(void) {
 	sceIoMkdir("ux0:eex/", 6);
 	sceIoMkdir("ux0:eex/payloads/", 6);
 	sceIoMkdir("ux0:eex/data/", 6);
-	sceIoMkdir("ux0:eex/spoofs/", 6);
 	fcp((curfw == 69) ? "app0:gudfw/clogo.e2xp" : "app0:oldfw/clogo.e2xp", "ux0:eex/payloads/clogo.e2xp");
 	fcp((curfw == 69) ? "app0:gudfw/rconfig.e2xp" : "app0:oldfw/rconfig.e2xp", "ux0:eex/payloads/rconfig.e2xp");
-	fcp((curfw == 69) ? "app0:enso_spoofs/manu_mode/manufacturing_mode_spoof.e2xp", "ux0:eex/payloads/manufacturing_mode_spoof.e2xp");
 	fcp("app0:bootlogo.raw", "ux0:eex/data/bootlogo.raw");
 	fcp("ur0:tai/boot_config.txt", "ux0:eex/boot_config.txt");
 	psvDebugScreenSetFgColor(COLOR_GREEN);
