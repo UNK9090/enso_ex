@@ -20,6 +20,8 @@ A mod of https://github.com/henkaku/enso for PSP2 Vita.
 	- If you get an error, reboot the device holding LTRIGGER and try again.
  2) Select "Install/reinstall the hack", press CROSS, the installer will install enso_ex.
 	- All non-critical errors can be skipped by pressing CROSS, it is safe to do so.
+ 3) For MBR Loader use this image file this image file contains default enso_ex you have need replace with another enso
+        - Link about this image file: https://drive.google.com/file/d/18AeUXyXkha-bH0YfZnFt0M6SnpoymjpO/view?usp=sharing
  
 ## Patches
  - The "os0:patches.e2xd" file is a set of code blobs that are executed at low-level module load.
