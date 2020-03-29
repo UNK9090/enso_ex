@@ -381,8 +381,10 @@ int do_install(void) {
 	sceIoMkdir("ux0:eex/", 6);
 	sceIoMkdir("ux0:eex/payloads/", 6);
 	sceIoMkdir("ux0:eex/data/", 6);
+	sceIoMkdir("ux0:eex/spoofs/", 6);
 	fcp((curfw == 69) ? "app0:gudfw/clogo.e2xp" : "app0:oldfw/clogo.e2xp", "ux0:eex/payloads/clogo.e2xp");
 	fcp((curfw == 69) ? "app0:gudfw/rconfig.e2xp" : "app0:oldfw/rconfig.e2xp", "ux0:eex/payloads/rconfig.e2xp");
+	fcp((curfw == 69) ? "app0:enso_spoofs/manu_mode/manufacturing_mode_spoof.e2xp", "ux0:eex/payloads/manufacturing_mode_spoof.e2xp");
 	fcp("app0:bootlogo.raw", "ux0:eex/data/bootlogo.raw");
 	fcp("ur0:tai/boot_config.txt", "ux0:eex/boot_config.txt");
 	psvDebugScreenSetFgColor(COLOR_GREEN);
@@ -508,8 +510,8 @@ int optct = 5;
 void smenu(){
 	psvDebugScreenClear(COLOR_BLACK);
 	psvDebugScreenSetFgColor(COLOR_CYAN);
-	printf("                        enso_ex v4.0                             \n");
-	printf("                         By SKGleba                              \n");
+	printf("                        enso_ex v4.2                             \n");
+	printf("                         By UNK9090                              \n");
 	psvDebugScreenSetFgColor(COLOR_RED);
 	for(int i = 0; i < optct; i++){
 		if(sel==i){
@@ -532,7 +534,7 @@ int main(int argc, char *argv[]) {
 	psvDebugScreenInit();
 
 	psvDebugScreenSetFgColor(COLOR_CYAN);
-	printf("Built On: %s by SKGleba\n\n", BUILD_DATE);
+	printf("Built On: %s by UNK9090\n\n", BUILD_DATE);
 
 	psvDebugScreenSetFgColor(COLOR_RED);
 	if (check_safe_mode()) {
