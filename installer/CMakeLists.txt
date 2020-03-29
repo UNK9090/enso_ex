@@ -12,7 +12,7 @@ set(SHORT_NAME enso_installer)
 project(${SHORT_NAME})
 include("${VITASDK}/share/vita.cmake" REQUIRED)
 
-set(VITA_APP_NAME "ensō_ex")
+set(VITA_APP_NAME "ensō_ex_4.2")
 set(VITA_TITLEID  "MLCL00003")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu99 -fno-builtin-printf")
