@@ -5,6 +5,9 @@ A mod of https://github.com/henkaku/enso for PSP2 Vita.
  - pre-nskernel recovery from a GC-SD device.
  - easy low-level code exec for custom kernel patches.
  - support for firmwares 3.60 and 3.65.
+ - allow to load on sd0 another enso henkaku mbr
+ - added CEX/DEX/TOOL/TEST Spoofs
+ - added Manufacturing Mode Spoof
  
 # Usage
 
@@ -63,6 +66,11 @@ A mod of https://github.com/henkaku/enso for PSP2 Vita.
  - If an error happened the user will need to confirm that he is aware of it by pressing the correct key:
 	- "Error reading GC-SD" - press TRIANGLE.
 	- "Incorrect SD magic (not SCE magic)" - press CIRCLE.
+	
+### "Enso Loader on SD"
+ - You can use the SD's for load custom mbr required img file for flash.
+ - If an error happened the user will need to confirm that he is aware of it by pressing the correct key:
+ - "Load MBR" - press SELECT + POWER.
 
 # Credits
  - Team molecule for henkaku, taihen, enso, and HenKaku wiki entries.
