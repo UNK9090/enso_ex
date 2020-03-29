@@ -68,7 +68,7 @@ A mod of https://github.com/henkaku/enso for PSP2 Vita.
 	- "Incorrect SD magic (not SCE magic)" - press CIRCLE.
 	
 ### "Enso Loader on SD"
- - You can use the SD's for load custom mbr required img file for flash.
+ - You can use the SD's for load custom MBR. required img file for flash.
  - If an error happened the user will need to confirm that he is aware of it by pressing the correct key:
  - "Load MBR" - press SELECT + POWER.
 
